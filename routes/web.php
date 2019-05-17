@@ -13,3 +13,7 @@
 
 Route::resource('/vote','VoteController');
 Route::get('/search','VoteController@search');
+Route::get('',function() {
+
+	return view('welcome');
+}
